@@ -1,0 +1,24 @@
+// partials => qismlarga bolish
+@import "variables";
+@import "placeholder";
+@import "mixin";
+@import "reset";
+@import "header";
+@import "showcase";
+@import "footer";
+
+.qora-btn {
+  @include knopka(black, 0.2s);
+}
+
+.qizil-btn {
+  @include knopka(red, 0.3s);
+}
+
+.yashil-btn {
+  @include knopka(green);
+}
+
+.oq-btn {
+  @include knopka($vaqt: 0.1s);
+}

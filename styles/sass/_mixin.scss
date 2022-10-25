@@ -1,0 +1,11 @@
+@mixin knopka($rang: white, $vaqt: 0.5s) {
+  @extend %button;
+  color: $rang;
+  box-shadow: 0 0 3px $rang;
+  border-color: $rang;
+  transition: all $vaqt ease-in;
+
+  &:hover {
+    background-color: $rang;
+  }
+}

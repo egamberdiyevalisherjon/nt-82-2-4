@@ -1,0 +1,20 @@
+$sides: (
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+);
+$props: (
+  m: margin,
+  p: padding,
+);
+
+@each $side-key, $side in $sides {
+  @each $prop-key, $prop in $props {
+    @for $i from 0 through 50 {
+      .#{$prop-key}#{$side-key}-#{$i} {
+        #{$prop}-#{$side}: #{$i * 2}px;
+      }
+    }
+  }
+}

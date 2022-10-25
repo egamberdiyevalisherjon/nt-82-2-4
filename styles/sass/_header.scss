@@ -1,0 +1,15 @@
+header {
+  padding: 3rem 0;
+
+  .container {
+    display: flex;
+
+    ul {
+      display: flex;
+
+      li {
+        color: $asosiy-rang;
+      }
+    }
+  }
+}

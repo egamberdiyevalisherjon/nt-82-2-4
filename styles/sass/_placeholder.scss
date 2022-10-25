@@ -1,0 +1,61 @@
+// placeholders => shablon
+// inheritance => meros
+
+.button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  border-radius: $radius;
+  border: 1px solid;
+  background-color: white;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+%button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  border-radius: $radius;
+  border: 1px solid;
+  background-color: white;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+%link {
+  font-size: 1.2rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.oq-link {
+  @extend %link;
+  color: #fff;
+}
